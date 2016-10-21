@@ -23,4 +23,3 @@ E:\Git\Online\CfiresTutor\Code\CfiresTutor\Utilities\bin\Debug\NPOI.OpenXml4Net.
 E:\Git\Online\CfiresTutor\Code\CfiresTutor\Utilities\bin\Debug\NPOI.OpenXmlFormats.dll
 E:\Git\Online\CfiresTutor\Code\CfiresTutor\Utilities\bin\Debug\NPOI.xml
 E:\Git\Online\CfiresTutor\Code\CfiresTutor\Utilities\obj\Debug\Utilities.csproj.ResolveComReference.cache
-E:\Git\Online\CfiresTutor\Code\CfiresTutor\Utilities\obj\Debug\Utilities.csprojResolveAssemblyReference.cache

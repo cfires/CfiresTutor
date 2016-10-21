@@ -190,6 +190,26 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Scripts\bootstrap\bootstrap.css" />
+    <Content Include="Content\Scripts\bootstrap\bootstrap.js" />
+    <Content Include="Content\Scripts\bootstrap\bootstrap.min.css" />
+    <Content Include="Content\Scripts\bootstrap\bootstrap.min.js" />
+    <None Include="Content\Scripts\jquery\jquery-3.1.1.intellisense.js" />
+    <Content Include="Content\Scripts\jquery\jquery-3.1.1.js" />
+    <Content Include="Content\Scripts\jquery\jquery-3.1.1.min.js" />
+    <Content Include="Content\Scripts\jquery\jquery-3.1.1.slim.js" />
+    <Content Include="Content\Scripts\jquery\jquery-3.1.1.slim.min.js" />
+    <None Include="Content\Scripts\jquery\jquery.validate-vsdoc.js" />
+    <Content Include="Content\Scripts\jquery\jquery.validate.js" />
+    <Content Include="Content\Scripts\jquery\jquery.validate.min.js" />
+    <Content Include="Content\Scripts\jquery\jquery.validate.unobtrusive.js" />
+    <Content Include="Content\Scripts\jquery\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Content\Scripts\modernizr-2.6.2.js" />
+    <Content Include="Content\Scripts\respond.js" />
+    <Content Include="Content\Styles\Default.css" />
+    <Content Include="Content\Styles\hplus_extend.css" />
+    <Content Include="Content\Styles\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -200,8 +220,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -209,6 +227,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="Content\Scripts\jquery\jquery-3.1.1.min.map" />
+    <Content Include="Content\Scripts\jquery\jquery-3.1.1.slim.min.map" />
     <None Include="Project_Readme.html" />
     <Content Include="Views\Shared\Master.cshtml" />
   </ItemGroup>
