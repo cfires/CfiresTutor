@@ -1,0 +1,9 @@
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Utilities\bin\Debug\CfiresTutor.Utilities.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Utilities\bin\Debug\CfiresTutor.Utilities.pdb
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Utilities\obj\Debug\CfiresTutor.Utilities.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Utilities\obj\Debug\CfiresTutor.Utilities.pdb
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Utilities\bin\Debug\Autofac.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Utilities\bin\Debug\AutoMapper.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Utilities\bin\Debug\NPoco.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Utilities\bin\Debug\Autofac.xml
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Utilities\bin\Debug\AutoMapper.xml

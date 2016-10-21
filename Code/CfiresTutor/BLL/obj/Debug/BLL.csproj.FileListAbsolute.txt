@@ -1,0 +1,16 @@
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\BLL\bin\Debug\CfiresTutor.BLL.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\BLL\bin\Debug\CfiresTutor.BLL.pdb
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\BLL\obj\Debug\CfiresTutor.BLL.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\BLL\obj\Debug\CfiresTutor.BLL.pdb
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\BLL\bin\Debug\CfiresTutor.DAL.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\BLL\bin\Debug\CfiresTutor.Model.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\BLL\bin\Debug\CfiresTutor.DAL.pdb
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\BLL\bin\Debug\CfiresTutor.Model.pdb
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\BLL\bin\Debug\Autofac.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\BLL\bin\Debug\AutoMapper.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\BLL\bin\Debug\NPoco.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\BLL\bin\Debug\Autofac.xml
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\BLL\bin\Debug\AutoMapper.xml
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\BLL\bin\Debug\CfiresTutor.Utilities.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\BLL\bin\Debug\CfiresTutor.Utilities.pdb

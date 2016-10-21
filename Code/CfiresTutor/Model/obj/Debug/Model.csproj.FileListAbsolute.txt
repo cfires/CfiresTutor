@@ -1,0 +1,10 @@
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\CfiresTutor.Model.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\CfiresTutor.Model.pdb
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Model\obj\Debug\CfiresTutor.Model.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Model\obj\Debug\CfiresTutor.Model.pdb
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\Autofac.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\AutoMapper.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\NPoco.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\Autofac.xml
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\AutoMapper.xml
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

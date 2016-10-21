@@ -1,0 +1,12 @@
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\CfiresTutor.DAL.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\CfiresTutor.DAL.pdb
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\DAL\obj\Debug\CfiresTutor.DAL.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\DAL\obj\Debug\CfiresTutor.DAL.pdb
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\CfiresTutor.Model.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\CfiresTutor.Model.pdb
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\Autofac.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\AutoMapper.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\NPoco.dll
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\Autofac.xml
+E:\Git\Offline\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\AutoMapper.xml
