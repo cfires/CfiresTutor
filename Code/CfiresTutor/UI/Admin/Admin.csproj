@@ -176,11 +176,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Web\Models\UserLoginViewModel.cs">
+      <Link>Models\UserLoginViewModel.cs</Link>
+    </Compile>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -212,7 +216,9 @@
     <Content Include="Content\Styles\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -224,6 +230,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\User\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -236,6 +243,10 @@
     <ProjectReference Include="..\..\BLL\BLL.csproj">
       <Project>{ca5398b7-760f-4a71-8c4f-29667e8340a1}</Project>
       <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Model\Model.csproj">
+      <Project>{18F7EE9D-DC5C-4B7F-9DCB-FC35694CBBEF}</Project>
+      <Name>Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\MVC\MVC.csproj">
       <Project>{edbacead-8a99-4eb2-b0d5-d28c49d16e67}</Project>
