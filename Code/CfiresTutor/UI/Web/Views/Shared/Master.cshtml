@@ -1,5 +1,4 @@
 ﻿﻿@{
-    //获取当前用户名
     var userName = "游客";
     if (CurrentUser != null)
     {
@@ -12,15 +11,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit">
-    <link href="~/Content/Scripts/bootstrap/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/Styles/Site.css" rel="stylesheet" />
-    <link href="~/Content/Styles/Default.css" rel="stylesheet" />
-    <link href="~/Content/Styles/hplus_extend.css" rel="stylesheet" />
+    @_RenderTitle()
+    @_RenderMeta()
+    @_RenderHeaderScripts(n =>
+{
+    n.AddCss("Content/Scripts/bootstrap/bootstrap.min.css");
+    n.AddCss("Content/Styles/Site.css");
+    n.AddCss("Content/Styles/Default.css");
+    n.AddCss("Content/Styles/hplus.css");
+    n.AddCss("Content/Styles/hplus_extend.css");
 
-    <script src="~/Content/Scripts/bootstrap/bootstrap.min.js"></script>
-    <script src="~/Content/Scripts/jquery/jquery-3.1.1.min.js"></script>
-    <script src="~/Content/Scripts/jquery/jquery.validate.min.js"></script>
-    <script src="~/Content/Scripts/jquery/jquery.validate.unobtrusive.min.js"></script>
+    n.AddJavascript("Content/Scripts/bootstrap/bootstrap.min.js");
+    n.AddJavascript("Content/Scripts/jquery/jquery-3.1.1.min.js");
+    n.AddJavascript("Content/Scripts/jquery/jquery.validate.min.js");
+    n.AddJavascript("Content/Scripts/jquery/jquery.validate.unobtrusive.min.js");
+})
 </head>
 <body>
     <div class="topbar">
@@ -46,7 +51,7 @@
     </div>
     <div class="head">
         <div class="logo">
-            <h1><a href="@Url.Action("Index", "Home")"><img src="~/img/logo.png" tppabs="http://qd.ygjj.com/images/logo.png" border="0" /></a></h1>
+            <h1><a href="@Url.Action("Index", "Home")"><img src="~/img/logo.png" border="0" /></a></h1>
         </div>
         <div class="city">
             <h3>
@@ -66,7 +71,7 @@
         <div class="navBox">
             <div class="classBox">
                 <div class='class'>
-                    <a href="index.htm" tppabs="http://qd.ygjj.com/"><font color="#ffffff">青岛家教</font></a>
+                    <a href="@Url.Action("Index","Home")"><font color="#ffffff">青岛家教</font></a>
                 </div>
             </div>
             <div class="nav">

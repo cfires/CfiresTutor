@@ -1,17 +1,58 @@
-﻿
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Master</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    @_RenderTitle()
+    @_RenderHeaderScripts(n =>
+{
+    n.AddCss("Content/Scripts/bootstrap/bootstrap.min.css");
+    n.AddCss("Content/Styles/Site.css");
+    n.AddCss("Content/Styles/Default.css");
+    n.AddCss("Content/Styles/hplus.css");
+    n.AddCss("Content/Styles/hplus_extend.css");
+
+    n.AddJavascript("Content/Scripts/bootstrap/bootstrap.min.js");
+    n.AddJavascript("Content/Scripts/jquery/jquery-3.1.1.min.js");
+    n.AddJavascript("Content/Scripts/jquery/jquery.validate.min.js");
+    n.AddJavascript("Content/Scripts/jquery/jquery.validate.unobtrusive.min.js");
+})
 </head>
-<body>
-    <div> 
+<body @RenderSection("bodyAttributeSection", false)>
+    <div id="wrapper" class="bg_grey">
+        @Html.Action("_SideMenu", "Home")
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom no-borders">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary "><i class="fa fa-bars"></i> </a>
+                        <span class="minimalize-styl-2"> @CurrentUser.Name ,欢迎进入龙腾家教网后台 </span>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <a href='@Url.Action("Logout", "User")'>
+                                <i class="fa fa-sign-out"></i> 退出
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="wrapper wrapper-content animated fadeInRight height_initial padding_null">
+                <div class="ibox">
+                    @RenderBody()
+                </div>
+                <div class="footer">
+                    <div class="pull-right">
+                        By：<a target="_blank" href="#">龙腾</a>
+                    </div>
+                    <div>
+                        <strong>Copyright</strong> H+ &copy; 2014
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    @RenderSection("bottomJavascript", false)
 </body>
 </html>

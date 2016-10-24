@@ -100,6 +100,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\Message\HtmlHelperExtension.cs" />
+    <Compile Include="HtmlRender\DefaultHtmlRenderService.cs" />
+    <Compile Include="HtmlRender\HtmlRenderEnum.cs" />
+    <Compile Include="HtmlRender\HtmlRenderTag.cs" />
+    <Compile Include="HtmlRender\HtmlRenderContext.cs" />
+    <Compile Include="HtmlRender\IHtmlRenderService.cs" />
+    <Compile Include="MvcConst.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controller\PublicController.cs" />
     <Compile Include="ViewPage\PublicWebPage.cs" />
@@ -122,6 +129,7 @@
       <Name>Utilities</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

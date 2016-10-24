@@ -73,5 +73,14 @@ namespace CfiresTutor.MVC
                 return userInfo;
             }
         }
+
+        /// <summary>
+        /// 设置页面title
+        /// </summary>
+        /// <param name="title"></param>
+        protected virtual void SetPageTitle(string title = "")
+        {
+            HtmlRenderContext.SetPageTitle(title);
+        }
     }
 }
