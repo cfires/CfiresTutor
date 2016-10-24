@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace CfiresTutor.DAL
 {
-    public class BaseUserRepository : Repository<Base_User>
+    public class BaseUserDal : Repository<Base_User>
     {
         IDatabase db = new Database("connStr");
 

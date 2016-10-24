@@ -9,18 +9,18 @@ using System.Threading.Tasks;
 
 namespace CfiresTutor.BLL
 {
-    public class UserService
+    public class UserBll
     {
-        BaseUserRepository _userRepostory = new BaseUserRepository();
+        BaseUserDal _userDal= new BaseUserDal();
 
         public Base_User Get(int id)
         {
-            return _userRepostory.Get(id);
+            return _userDal.Get(id);
         }
 
         public Base_User GetByEmail(string email)
         {
-            return _userRepostory.GetByEmail(email);
+            return _userDal.GetByEmail(email);
         }
 
         public void Create(Base_User user)
@@ -28,7 +28,7 @@ namespace CfiresTutor.BLL
             user.CreateDate = DateTime.Now;
             user.Password = SecurityHelper.EncryptAES(user.Password);
             user.Enabled = true;
-            _userRepostory.Insert(user);
+            _userDal.Insert(user);
         }
 
         #region 用户管理
@@ -37,7 +37,7 @@ namespace CfiresTutor.BLL
         {
             int start = (pageIndex - 1) * pageSize + 1;
             int end = pageIndex * pageSize;
-            return _userRepostory.GetList(start, end);
+            return _userDal.GetList(start, end);
         }
         #endregion
     }

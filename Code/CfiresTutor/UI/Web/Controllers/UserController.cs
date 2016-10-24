@@ -17,7 +17,7 @@ namespace CfiresTutor.UI.Web.Controllers
     {
         public UserController() { }
 
-        UserService _userService = new UserService();
+        UserBll _userBll = new UserBll();
 
         #region 登录
         /// <summary>
@@ -55,7 +55,7 @@ namespace CfiresTutor.UI.Web.Controllers
                 ModelState.AddModelError("Captcha", "验证码错误");
             }
 
-            var user = _userService.GetByEmail(viewModel.Email);
+            var user = _userBll.GetByEmail(viewModel.Email);
 
             Login(user);
 
@@ -88,8 +88,8 @@ namespace CfiresTutor.UI.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                _userService.Create(viewModel.AsUser());
-                var user = _userService.GetByEmail(viewModel.Email);
+                _userBll.Create(viewModel.AsUser());
+                var user = _userBll.GetByEmail(viewModel.Email);
                 Login(user);
                 return RedirectToAction("Index", "Home");
             }
@@ -107,7 +107,7 @@ namespace CfiresTutor.UI.Web.Controllers
         /// <returns></returns>
         public ActionResult _ValidateEmailRepeat(string email)
         {
-            var user = _userService.GetByEmail(email);
+            var user = _userBll.GetByEmail(email);
             if (user != null)
             {
                 return Json(false, JsonRequestBehavior.AllowGet);

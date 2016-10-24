@@ -11,7 +11,7 @@ namespace CfiresTutor.UI.Admin.Controllers
 {
     public class UserController : Controller
     {
-        UserService _userService = new UserService();
+        UserBll _userService = new UserBll();
 
         /// <summary>
         /// 登录

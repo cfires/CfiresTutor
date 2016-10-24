@@ -7,9 +7,9 @@ using System.Web.Mvc;
 
 namespace CfiresTutor.UI.Web.Controllers
 {
-    public class StudentController : PublicController
+    public class PersonController : PublicController
     {
-        // GET: Students
+        // GET: Person
         public ActionResult Index()
         {
             return View();

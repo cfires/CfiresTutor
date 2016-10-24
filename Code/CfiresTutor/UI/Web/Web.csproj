@@ -180,11 +180,14 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\ArticlesController.cs" />
     <Compile Include="Controllers\CommonController.cs" />
+    <Compile Include="Controllers\CostController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\StudentController.cs" />
-    <Compile Include="Controllers\TutorController.cs" />
+    <Compile Include="Controllers\OrdersController.cs" />
+    <Compile Include="Controllers\PersonController.cs" />
+    <Compile Include="Controllers\TeachersController.cs" />
     <Compile Include="Controllers\TutorEnglishController.cs" />
     <Compile Include="Controllers\TutorMathController.cs" />
     <Compile Include="Controllers\UserController.cs" />
@@ -211,8 +214,8 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\User\Register.cshtml" />
-    <Content Include="Views\Tutor\Index.cshtml" />
-    <Content Include="Views\Students\Index.cshtml" />
+    <Content Include="Views\Teachers\Index.cshtml" />
+    <Content Include="Views\Orders\Index.cshtml" />
     <Content Include="Views\TutorEnglish\Index.cshtml" />
     <Content Include="Views\TutorMath\Index.cshtml" />
     <Content Include="Views\Error\Index.cshtml" />
@@ -222,12 +225,15 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="img\" />
+    <Folder Include="Views\Articles\" />
     <Folder Include="Views\Common\" />
+    <Folder Include="Views\Person\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Views\Shared\Master.cshtml" />
+    <Content Include="Views\Cost\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\BLL\BLL.csproj">

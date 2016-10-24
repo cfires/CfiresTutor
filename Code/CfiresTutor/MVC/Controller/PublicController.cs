@@ -57,7 +57,7 @@ namespace CfiresTutor.MVC
                 UserType ut = EnumHelper.Parse<UserType>(usertypeClaimType.Value);
                 int userID = int.Parse(useridClaimType.Value);
 
-                UserService _userService = new UserService();
+                UserBll _userService = new UserBll();
 
                 switch (ut)
                 {

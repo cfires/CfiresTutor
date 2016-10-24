@@ -55,7 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseUserRepository .cs" />
+    <Compile Include="BaseUserDal .cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="SqlHelper.cs" />
