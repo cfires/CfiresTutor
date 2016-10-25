@@ -58,5 +58,27 @@ namespace CfiresTutor.DAL
         {
             db.Update(entity);
         }
+
+        /// <summary>
+        /// 获取列表
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <returns></returns>
+        public IEnumerable<T> GetList(Sql sql)
+        {
+            return db.Query<T>(sql);
+        }
+
+        /// <summary>
+        /// 获取分页列表
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <param name="pageIndex"></param>
+        /// <param name="pageSize"></param>
+        /// <returns></returns>
+        public Page<T> GetPageList(Sql sql, int pageIndex, int pageSize)
+        {
+            return db.Page<T>(pageIndex, pageSize, sql); ;
+        }
     }
 }

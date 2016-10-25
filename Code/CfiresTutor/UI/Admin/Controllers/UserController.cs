@@ -1,17 +1,34 @@
 ﻿using CfiresTutor.BLL;
 using CfiresTutor.Model;
+using CfiresTutor.MVC;
 using CfiresTutor.UI.Web.Models;
+using CfiresTutor.Utilities;
+using Microsoft.Owin.Security;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Web;
 using System.Web.Mvc;
 
 namespace CfiresTutor.UI.Admin.Controllers
 {
-    public class UserController : Controller
+    public class UserController : PublicController
     {
-        UserBll _userService = new UserBll();
+        UserBll _userBll = new UserBll();
+
+        /// <summary>
+        /// 用户列表
+        /// </summary>
+        /// <param name="pageIndex"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="keyword"></param>
+        /// <returns></returns>
+        public ActionResult Index(int pageIndex = 1, int pageSize = 20, string keyword = null)
+        {
+            var userList = _userBll.GetPageList(pageIndex, pageSize, keyword);
+            return View(userList);
+        }
 
         /// <summary>
         /// 登录
@@ -26,12 +43,56 @@ namespace CfiresTutor.UI.Admin.Controllers
             return View();
         }
 
+        /// <summary>
+        /// 登录表单提交
+        /// </summary>
+        /// <param name="viewModel"></param>
+        /// <param name="returnUrl"></param>
+        /// <returns></returns>
         [HttpPost]
         [AllowAnonymous]
         public ActionResult Login(UserLoginViewModel viewModel, string returnUrl)
         {
-            Base_User user = _userService.GetByEmail(viewModel.Email);
-            return View();
+            Base_User user = _userBll.GetByEmail(viewModel.Email);
+            Login(user);
+
+            if (user != null && SecurityHelper.DecryptAES(user.Password) == viewModel.Password)
+            {
+                return RedirectToLocal(returnUrl);
+            }
+            else
+            {
+                ModelState.AddModelError("Validate", "用户名或密码错误");
+                return View();
+            }
         }
+
+        #region private
+
+        private void Login(Base_User user)
+        {
+            var identity = new ClaimsIdentity("App");
+            identity.AddClaim(new Claim(ClaimTypes.Name, user.Email));
+            identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()));
+            identity.AddClaim(new Claim(ClaimTypes.Role, user.Type.ToString()));
+            identity.AddClaim(new Claim(ClaimTypes.GroupSid, user.Type.ToString()));
+            AuthenticationManager.SignIn(new AuthenticationProperties() { IsPersistent = false }, identity);
+        }
+
+        /// <summary>
+        /// 重定向
+        /// </summary>
+        /// <param name="returnUrl"></param>
+        /// <returns></returns>
+        private ActionResult RedirectToLocal(string returnUrl)
+        {
+            if (Url.IsLocalUrl(returnUrl))
+            {
+                return Redirect(returnUrl);
+            }
+            return RedirectToAction("Index", "Home");
+        }
+
+        #endregion
     }
 }

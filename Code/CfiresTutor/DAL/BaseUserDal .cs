@@ -23,6 +23,20 @@ namespace CfiresTutor.DAL
         /// <summary>
         /// 获取用户集合
         /// </summary>
+        /// <param name="keyWord"></param>
+        /// <returns></returns>
+        public IEnumerable<Base_User> GetList(string keyWord)
+        {
+            Sql sql = Sql.Builder.Append("SELECT * FROM Base_User where Name LIKE @0 AND Enabled=1", "%" + keyWord + "%");
+
+            sql.OrderBy("CreateDate DESC");
+
+            return base.GetList(sql);
+        }
+
+        /// <summary>
+        /// 获取用户集合（分页显示）
+        /// </summary>
         /// <param name="start"></param>
         /// <param name="end"></param>
         /// <returns></returns>
@@ -50,6 +64,26 @@ namespace CfiresTutor.DAL
                 });
             }
             return list;
+
+        }
+
+        /// <summary>
+        /// 获取用户分页列表
+        /// </summary>
+        /// <param name="pageIndex"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="keyWord"></param>
+        /// <returns></returns>
+        public Page<Base_User> GetPageList(int pageIndex, int pageSize, string keyWord)
+        {
+            Sql sql = Sql.Builder.Append("SELECT * FROM Base_User where Enabled=1");
+
+            if (!string.IsNullOrWhiteSpace(keyWord))
+            {
+                sql.Append("AND Name LIKE @0", "%" + keyWord + "%");
+            }
+
+            return base.GetPageList(sql, pageIndex, pageSize);
         }
 
     }

@@ -1,4 +1,4 @@
-﻿/*
+/*
  *
  *   H+ - 后台主题UI框架
  *   version 4.0
@@ -4817,9 +4817,9 @@ body.modal-open {
 
 .logo-name {
     color: #e6e6e6;
-    font-size: 180px;
+    font-size: 50px;
     font-weight: 800;
-    letter-spacing: -10px;
+    letter-spacing: 5px;
     margin-bottom: 0px;
 }
 

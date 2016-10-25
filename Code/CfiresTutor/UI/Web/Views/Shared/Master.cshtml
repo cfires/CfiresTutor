@@ -13,19 +13,14 @@
     <meta name="renderer" content="webkit">
     @_RenderTitle()
     @_RenderMeta()
-    @_RenderHeaderScripts(n =>
-{
-    n.AddCss("Content/Scripts/bootstrap/bootstrap.min.css");
-    n.AddCss("Content/Styles/Site.css");
-    n.AddCss("Content/Styles/Default.css");
-    n.AddCss("Content/Styles/hplus.css");
-    n.AddCss("Content/Styles/hplus_extend.css");
 
-    n.AddJavascript("Content/Scripts/bootstrap/bootstrap.min.js");
-    n.AddJavascript("Content/Scripts/jquery/jquery-3.1.1.min.js");
-    n.AddJavascript("Content/Scripts/jquery/jquery.validate.min.js");
-    n.AddJavascript("Content/Scripts/jquery/jquery.validate.unobtrusive.min.js");
-})
+    <link href="~/Content/Scripts/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Styles/Site.css" rel="stylesheet" />
+    <link href="~/Content/Styles/Default.css" rel="stylesheet" />
+    <script src="~/Content/Scripts/bootstrap/bootstrap.min.js"></script>
+    <script src="~/Content/Scripts/jquery/jquery-3.1.1.min.js"></script>
+    <script src="~/Content/Scripts/jquery/jquery.validate.min.js"></script>
+    <script src="~/Content/Scripts/jquery/jquery.validate.unobtrusive.min.js"></script>
 </head>
 <body>
     <div class="topbar">
@@ -51,7 +46,7 @@
     </div>
     <div class="head">
         <div class="logo">
-            <h1><a href="@Url.Action("Index", "Home")"><img src="~/img/logo.png" border="0" /></a></h1>
+            <h1><a href="@Url.Action("Index", "Home")"><img src="~/Content/Images/logo.png" border="0" /></a></h1>
         </div>
         <div class="city">
             <h3>
@@ -87,6 +82,77 @@
             </div>
         </div>
     </div>
-    @RenderBody()
+    <div class="containerBox">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </div>
+    <div class="footNavBox">
+        <div class="footNav">
+            <div class="cityTel">
+                <span>青岛热线</span>
+                <p>400-700-7788</p>
+            </div>
+            <div class="navBox">
+                <dl>
+                    <dt>会员指南</dt>
+                    <dd>
+                        <span>→ </span><a href="http://qd.ygjj.com/News/8/1" rel="nofollow">帮助中心</a>
+                    </dd>
+                    <dd>
+                        <span>→ </span><a href="http://qd.ygjj.com/D7149.html" rel="nofollow">如何请家教</a>
+                    </dd>
+                    <dd>
+                        <span>→ </span><a href="http://qd.ygjj.com/D7150.html" rel="nofollow">如何做家教</a>
+                    </dd>
+                    <dd>
+                        <span>→ </span><a href="http://qd.ygjj.com/D7151.html" rel="nofollow">教员签约协议</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>支付方式</dt>
+                    <dd>
+                        <span>→ </span><a href="http://qd.ygjj.com/D7152.html" rel="nofollow">在线支付</a>
+                    </dd>
+                    <dd>
+                        <span>→ </span><a href="http://qd.ygjj.com/Online.aspx" rel="nofollow">银行转账</a>
+                    </dd>
+                    <dd>
+                        <span>→ </span><a href="http://qd.ygjj.com/Cost.aspx" rel="nofollow">资费标准</a>
+                    </dd>
+                    <dd>
+                        <span>→ </span><a href="http://qd.ygjj.com/D7154.html" rel="nofollow">退款说明</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>服务条款</dt>
+                    <dd>
+                        <span>→ </span><a href="http://qd.ygjj.com/D7155.html" rel="nofollow">隐私保护</a>
+                    </dd>
+                    <dd>
+                        <span>→ </span><a href="http://qd.ygjj.com/D7156.html" rel="nofollow">侵权处理</a>
+                    </dd>
+                    <dd>
+                        <span>→ </span><a href="http://qd.ygjj.com/D7157.html" rel="nofollow">免责说明</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>关于我们</dt>
+                    <dd>
+                        <span>→ </span><a href="http://qd.ygjj.com/D7173.html" rel="nofollow">阳光家教简介</a>
+                    </dd>
+                    <dd>
+                        <span>→ </span><a href="http://qd.ygjj.com/News/8/1/" rel="nofollow">阳光家教公告</a>
+                    </dd>
+                    <dd>
+                        <span>→ </span><a href="http://qd.ygjj.com/D7161.html" rel="nofollow">联系我们</a>
+                    </dd>
+                    <dd>
+                        <span>→ </span><a href="http://qd.ygjj.com/Links" rel="nofollow">友情链接</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

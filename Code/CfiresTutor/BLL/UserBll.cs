@@ -1,6 +1,7 @@
 ﻿using CfiresTutor.DAL;
 using CfiresTutor.Model;
 using CfiresTutor.Utilities;
+using NPoco;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace CfiresTutor.BLL
 {
     public class UserBll
     {
-        BaseUserDal _userDal= new BaseUserDal();
+        BaseUserDal _userDal = new BaseUserDal();
 
         public Base_User Get(int id)
         {
@@ -31,13 +32,20 @@ namespace CfiresTutor.BLL
             _userDal.Insert(user);
         }
 
-        #region 用户管理
+       
+
+        #region 用户列表
 
         public IEnumerable<Base_User> GetUserList(int pageIndex, int pageSize)
         {
             int start = (pageIndex - 1) * pageSize + 1;
             int end = pageIndex * pageSize;
             return _userDal.GetList(start, end);
+        }
+
+        public Page<Base_User> GetPageList(int pageIndex, int pageSize, string keyword)
+        {
+            return _userDal.GetPageList(pageIndex, pageSize, keyword);
         }
         #endregion
     }
