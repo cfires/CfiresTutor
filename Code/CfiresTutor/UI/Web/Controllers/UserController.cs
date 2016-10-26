@@ -120,7 +120,7 @@ namespace CfiresTutor.UI.Web.Controllers
 
         #region private
 
-        private void Login(Base_Teacher user)
+        private void Login(Base_User user)
         {
             var identity = new ClaimsIdentity("App");
             identity.AddClaim(new Claim(ClaimTypes.Name, user.Email));

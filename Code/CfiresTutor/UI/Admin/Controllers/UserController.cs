@@ -66,7 +66,7 @@ namespace CfiresTutor.UI.Admin.Controllers
         [AllowAnonymous]
         public ActionResult Login(UserLoginViewModel viewModel, string returnUrl)
         {
-            Base_Teacher user = _userBll.GetByEmail(viewModel.Email);
+            Base_User user = _userBll.GetByEmail(viewModel.Email);
             Login(user);
 
             if (user != null && SecurityHelper.DecryptAES(user.Password) == viewModel.Password)
@@ -82,7 +82,7 @@ namespace CfiresTutor.UI.Admin.Controllers
 
         #region private
 
-        private void Login(Base_Teacher user)
+        private void Login(Base_User user)
         {
             var identity = new ClaimsIdentity("App");
             identity.AddClaim(new Claim(ClaimTypes.Name, user.Email));

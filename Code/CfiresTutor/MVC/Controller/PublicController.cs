@@ -38,7 +38,7 @@ namespace CfiresTutor.MVC
         /// <summary>
         /// 当前用户
         /// </summary>
-        public Base_Teacher CurrentUser
+        public Base_User CurrentUser
         {
             get
             {
@@ -49,7 +49,7 @@ namespace CfiresTutor.MVC
                 if (!user.Identity.IsAuthenticated)
                     return null;
 
-                Base_Teacher userInfo;
+                Base_User userInfo;
 
                 var useridClaimType = user.FindFirst(ClaimTypes.NameIdentifier);
                 var usertypeClaimType = user.FindFirst(ClaimTypes.GroupSid);

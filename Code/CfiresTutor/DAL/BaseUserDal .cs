@@ -11,14 +11,14 @@ using System.Threading.Tasks;
 
 namespace CfiresTutor.DAL
 {
-    public class BaseUserDal : Repository<Base_Teacher>
+    public class BaseUserDal : Repository<Base_User>
     {
         IDatabase db = new Database("connStr");
 
-        public Base_Teacher GetByEmail(string email)
+        public Base_User GetByEmail(string email)
         {
             var sql = Sql.Builder.Append("SELECT * FROM Base_User WHERE Email = @0", email);
-            return db.FirstOrDefault<Base_Teacher>(sql);
+            return db.FirstOrDefault<Base_User>(sql);
         }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace CfiresTutor.DAL
         /// </summary>
         /// <param name="keyWord"></param>
         /// <returns></returns>
-        public IEnumerable<Base_Teacher> GetList(string keyWord)
+        public IEnumerable<Base_User> GetList(string keyWord)
         {
             Sql sql = Sql.Builder.Append("SELECT * FROM Base_User where Name LIKE @0 AND Enabled=1", "%" + keyWord + "%");
 
@@ -42,7 +42,7 @@ namespace CfiresTutor.DAL
         /// <param name="pageSize"></param>
         /// <param name="keyWord"></param>
         /// <returns></returns>
-        public PageDataSet<Base_Teacher> GetPageList(int pageIndex, int pageSize, string keyWord, UserType userType = UserType.Student)
+        public PageDataSet<Base_User> GetPageList(int pageIndex, int pageSize, string keyWord, UserType userType = UserType.Student)
         {
             Sql sql = Sql.Builder.Append("SELECT * FROM Base_User where Enabled=1 AND IsDelete=0 AND UserType=@0", userType);
 

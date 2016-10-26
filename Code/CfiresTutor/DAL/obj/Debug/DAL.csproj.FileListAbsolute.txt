@@ -42,3 +42,11 @@ E:\Git\Online\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\NPOI.OpenXml4Net.dll
 E:\Git\Online\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\ICSharpCode.SharpZipLib.dll
 E:\Git\Online\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\CfiresTutor.Utilities.pdb
 E:\Git\Online\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\NPOI.xml
+E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\CfiresTutor.Utilities.dll
+E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\NPOI.OOXML.dll
+E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\NPOI.dll
+E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\NPOI.OpenXml4Net.dll
+E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\CfiresTutor.Utilities.pdb
+E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\NPOI.xml
