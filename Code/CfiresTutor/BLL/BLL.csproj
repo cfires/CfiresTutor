@@ -55,8 +55,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseSubjectBll.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserBll.cs" />
+    <Compile Include="BaseUserBll.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DAL\DAL.csproj">

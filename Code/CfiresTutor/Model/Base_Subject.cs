@@ -1,33 +1,36 @@
 ﻿using NPoco;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CfiresTutor.Model
 {
     /// <summary>
-    /// 科目实体类
+    /// 课程实体类
     /// </summary>
     [TableName("Base_Subject")]
-    [PrimaryKey("Id")]
+    [PrimaryKey("Id", AutoIncrement = true)]
     public class Base_Subject
     {
+        /// <summary>
+        /// 自增主键
+        /// </summary>
         [Column("Id")]
         public int Id { get; set; }
 
+        /// <summary>
+        /// 课程名称
+        /// </summary>
         [Column("Name")]
         public string Name { get; set; }
 
+        /// <summary>
+        /// 课程年级
+        /// </summary>
         [Column("Grade")]
         public string Grade { get; set; }
 
+        /// <summary>
+        /// 官方价格
+        /// </summary>
         [Column("Price")]
-        public int Price { get; set; }
-
-        public int? Num { get; set; }
-
-        public int? Sex { get; set; }
+        public int? OfficialPrice { get; set; }
     }
 }

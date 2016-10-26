@@ -15,7 +15,7 @@ namespace CfiresTutor.UI.Admin.Controllers
 {
     public class UserController : PublicController
     {
-        UserBll _userBll = new UserBll();
+        BaseUserBll _userBll = new BaseUserBll();
 
         /// <summary>
         /// 学员列表
@@ -26,7 +26,7 @@ namespace CfiresTutor.UI.Admin.Controllers
         /// <returns></returns>
         public ActionResult Students(int pageIndex = 1, int pageSize = 20, string keyword = null)
         {
-            var userList = _userBll.GetPageList(pageIndex, pageSize, keyword);
+            var userList = _userBll.GetPageList(pageIndex, pageSize, keyword, UserType.Student);
             return View(userList);
         }
 
@@ -39,7 +39,7 @@ namespace CfiresTutor.UI.Admin.Controllers
         /// <returns></returns>
         public ActionResult Teachers(int pageIndex = 1, int pageSize = 20, string keyword = null)
         {
-            var userList = _userBll.GetPageList(pageIndex, pageSize, keyword);
+            var userList = _userBll.GetPageList(pageIndex, pageSize, keyword, UserType.Teacher);
             return View(userList);
         }
 
@@ -66,7 +66,7 @@ namespace CfiresTutor.UI.Admin.Controllers
         [AllowAnonymous]
         public ActionResult Login(UserLoginViewModel viewModel, string returnUrl)
         {
-            Base_User user = _userBll.GetByEmail(viewModel.Email);
+            Base_Teacher user = _userBll.GetByEmail(viewModel.Email);
             Login(user);
 
             if (user != null && SecurityHelper.DecryptAES(user.Password) == viewModel.Password)
@@ -82,13 +82,13 @@ namespace CfiresTutor.UI.Admin.Controllers
 
         #region private
 
-        private void Login(Base_User user)
+        private void Login(Base_Teacher user)
         {
             var identity = new ClaimsIdentity("App");
             identity.AddClaim(new Claim(ClaimTypes.Name, user.Email));
             identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()));
-            identity.AddClaim(new Claim(ClaimTypes.Role, user.Type.ToString()));
-            identity.AddClaim(new Claim(ClaimTypes.GroupSid, user.Type.ToString()));
+            identity.AddClaim(new Claim(ClaimTypes.Role, user.UserType.ToString()));
+            identity.AddClaim(new Claim(ClaimTypes.GroupSid, user.UserType.ToString()));
             AuthenticationManager.SignIn(new AuthenticationProperties() { IsPersistent = false }, identity);
         }
 

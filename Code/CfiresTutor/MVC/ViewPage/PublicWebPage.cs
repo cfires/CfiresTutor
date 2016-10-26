@@ -18,7 +18,7 @@ namespace CfiresTutor.MVC
         /// <summary>
         /// 当前用户
         /// </summary>
-        public Base_User CurrentUser
+        public Base_Teacher CurrentUser
         {
             get
             {

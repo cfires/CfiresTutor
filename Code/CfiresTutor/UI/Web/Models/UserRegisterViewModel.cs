@@ -45,8 +45,8 @@ namespace CfiresTutor.UI.Web.Models
         static UserRegisterViewModelExtensions()
         {
             //创建映射配置
-            Mapper.Initialize(x => x.CreateMap<Base_User, UserRegisterViewModel>());
-            Mapper.Initialize(x => x.CreateMap<UserRegisterViewModel, Base_User>());
+            Mapper.Initialize(x => x.CreateMap<Base_Teacher, UserRegisterViewModel>());
+            Mapper.Initialize(x => x.CreateMap<UserRegisterViewModel, Base_Teacher>());
         }
 
         /// <summary>
@@ -54,9 +54,9 @@ namespace CfiresTutor.UI.Web.Models
         /// </summary>
         /// <param name="source"></param>
         /// <returns></returns>
-        public static Base_User AsUser(this UserRegisterViewModel source)
+        public static Base_Teacher AsUser(this UserRegisterViewModel source)
         {
-            return Mapper.Map<Base_User>(source);
+            return Mapper.Map<Base_Teacher>(source);
         }
     }
 }

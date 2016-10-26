@@ -11,7 +11,7 @@
                     </span>
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <span class="clear">
-                            <span class="block m-t-xs"><strong class="font-bold">@CurrentUser.Name</strong></span>
+                            <span class="block m-t-xs"><strong class="font-bold">@CurrentUser.UserName</strong></span>
                             <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
                         </span>
                     </a>
@@ -40,7 +40,7 @@
             </li>
             <li>
                 <a href="#">
-                    <i class="fa fa-home"></i>
+                    <i class="fa fa-user"></i>
                     <span class="nav-label">用户管理</span>
                     <span class="fa arrow"></span>
                 </a>
@@ -50,6 +50,18 @@
                     </li>
                     <li>
                         <a class="J_menuItem" href="@Url.Action("Students","User")">学员管理</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-cog"></i>
+                    <span class="nav-label">分类管理</span>
+                    <span class="fa arrow"></span>
+                </a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a class="J_menuItem" href="@Url.Action("Teachers","User")" data-index="0">课程分类</a>
                     </li>
                 </ul>
             </li>

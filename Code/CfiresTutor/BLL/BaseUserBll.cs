@@ -10,21 +10,21 @@ using System.Threading.Tasks;
 
 namespace CfiresTutor.BLL
 {
-    public class UserBll
+    public class BaseUserBll
     {
         BaseUserDal _userDal = new BaseUserDal();
 
-        public Base_User Get(int id)
+        public Base_Teacher Get(int id)
         {
             return _userDal.Get(id);
         }
 
-        public Base_User GetByEmail(string email)
+        public Base_Teacher GetByEmail(string email)
         {
             return _userDal.GetByEmail(email);
         }
 
-        public void Create(Base_User user)
+        public void Create(Base_Teacher user)
         {
             user.CreateDate = DateTime.Now;
             user.Password = SecurityHelper.EncryptAES(user.Password);
@@ -32,21 +32,9 @@ namespace CfiresTutor.BLL
             _userDal.Insert(user);
         }
 
-       
-
-        #region 用户列表
-
-        public IEnumerable<Base_User> GetUserList(int pageIndex, int pageSize)
+        public PageDataSet<Base_Teacher> GetPageList(int pageIndex, int pageSize, string keyword, UserType userType = UserType.Student)
         {
-            int start = (pageIndex - 1) * pageSize + 1;
-            int end = pageIndex * pageSize;
-            return _userDal.GetList(start, end);
+            return _userDal.GetPageList(pageIndex, pageSize, keyword, userType);
         }
-
-        public PageDataSet<Base_User> GetPageList(int pageIndex, int pageSize, string keyword)
-        {
-            return _userDal.GetPageList(pageIndex, pageSize, keyword);
-        }
-        #endregion
     }
 }

@@ -17,7 +17,7 @@ namespace CfiresTutor.UI.Web.Controllers
     {
         public UserController() { }
 
-        UserBll _userBll = new UserBll();
+        BaseUserBll _userBll = new BaseUserBll();
 
         #region 登录
         /// <summary>
@@ -120,13 +120,13 @@ namespace CfiresTutor.UI.Web.Controllers
 
         #region private
 
-        private void Login(Base_User user)
+        private void Login(Base_Teacher user)
         {
             var identity = new ClaimsIdentity("App");
             identity.AddClaim(new Claim(ClaimTypes.Name, user.Email));
             identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()));
-            identity.AddClaim(new Claim(ClaimTypes.Role, user.Type.ToString()));
-            identity.AddClaim(new Claim(ClaimTypes.GroupSid, user.Type.ToString()));
+            identity.AddClaim(new Claim(ClaimTypes.Role, user.UserType.ToString()));
+            identity.AddClaim(new Claim(ClaimTypes.GroupSid, user.UserType.ToString()));
             AuthenticationManager.SignIn(new AuthenticationProperties() { IsPersistent = false }, identity);
         }
 

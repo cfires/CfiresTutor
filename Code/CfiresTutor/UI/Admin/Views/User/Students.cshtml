@@ -1,5 +1,42 @@
-﻿@{
+﻿@model PageDataSet<Base_User>
+@{
     Layout = "~/Views/Shared/Master.cshtml";
 }
 
-<h2>Students</h2>
+<div class="ibox-content">
+    <div class="">
+
+    </div>
+    <table width="100%">
+        <thead>
+            <tr>
+                <th width="100%">
+                    <input type="checkbox" name="checkAllControl" />全选
+                </th>
+                <th>登录名</th>
+                <th>用户名</th>
+                <th>创建时间</th>
+                <th>最后登录时间</th>
+                <td>操作</td>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td><input type="checkbox" name="checkSingle" /></td>
+                        <td>@item.LoginName</td>
+                        <td>@item.UserName</td>
+                        <td>@item.CreateDate.ToString("yyyy/MM/dd HH:mm")</td>
+                        <td>@item.LastLoginDate.ToString("yyyy/MM/dd HH:mm")</td>
+                        <td>
+                            <a class="btn btn-sm btn-danger">删除</a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

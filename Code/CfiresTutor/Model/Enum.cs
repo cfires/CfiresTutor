@@ -19,7 +19,7 @@ namespace CfiresTutor.Model
         /// 教员
         /// </summary>
         [Description("教员")]
-        Tutor = 1,
+        Teacher = 1,
 
         /// <summary>
         /// 管理员

@@ -38,7 +38,7 @@ namespace CfiresTutor.MVC
         /// <summary>
         /// 当前用户
         /// </summary>
-        public Base_User CurrentUser
+        public Base_Teacher CurrentUser
         {
             get
             {
@@ -49,7 +49,7 @@ namespace CfiresTutor.MVC
                 if (!user.Identity.IsAuthenticated)
                     return null;
 
-                Base_User userInfo;
+                Base_Teacher userInfo;
 
                 var useridClaimType = user.FindFirst(ClaimTypes.NameIdentifier);
                 var usertypeClaimType = user.FindFirst(ClaimTypes.GroupSid);
@@ -57,12 +57,12 @@ namespace CfiresTutor.MVC
                 UserType ut = EnumHelper.Parse<UserType>(usertypeClaimType.Value);
                 int userID = int.Parse(useridClaimType.Value);
 
-                UserBll _userService = new UserBll();
+                BaseUserBll _userService = new BaseUserBll();
 
                 switch (ut)
                 {
                     case UserType.Student:
-                    case UserType.Tutor:
+                    case UserType.Teacher:
                     default:
                         userInfo = _userService.Get(userID);
                         break;

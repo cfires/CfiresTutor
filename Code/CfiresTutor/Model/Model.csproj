@@ -56,6 +56,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base_Subject.cs" />
+    <Compile Include="Base_Student.cs" />
+    <Compile Include="Base_Teacher.cs" />
     <Compile Include="Base_User.cs" />
     <Compile Include="Enum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
