@@ -1,4 +1,5 @@
-﻿using NPoco;
+﻿using CfiresTutor.Utilities;
+using NPoco;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -76,9 +77,15 @@ namespace CfiresTutor.DAL
         /// <param name="pageIndex"></param>
         /// <param name="pageSize"></param>
         /// <returns></returns>
-        public Page<T> GetPageList(Sql sql, int pageIndex, int pageSize)
+        public PageDataSet<T> GetPageList(Sql sql, int pageIndex, int pageSize)
         {
-            return db.Page<T>(pageIndex, pageSize, sql); ;
+            Page<T> pages = db.Page<T>(pageIndex, pageSize, sql);
+
+            PageDataSet<T> result = new PageDataSet<T>(pages.Items);
+            result.PageIndex = pageIndex;
+            result.PageSize = pageSize;
+            result.TotalRecords = (int)pages.TotalItems;
+            return result;
         }
     }
 }

@@ -34,3 +34,11 @@ E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\AutoMapper.xml
 E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
 E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\DAL\obj\Debug\CfiresTutor.DAL.dll
 E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\DAL\obj\Debug\CfiresTutor.DAL.pdb
+E:\Git\Online\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\CfiresTutor.Utilities.dll
+E:\Git\Online\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\NPOI.OOXML.dll
+E:\Git\Online\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\NPOI.dll
+E:\Git\Online\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\NPOI.OpenXmlFormats.dll
+E:\Git\Online\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\NPOI.OpenXml4Net.dll
+E:\Git\Online\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Git\Online\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\CfiresTutor.Utilities.pdb
+E:\Git\Online\CfiresTutor\Code\CfiresTutor\DAL\bin\Debug\NPOI.xml

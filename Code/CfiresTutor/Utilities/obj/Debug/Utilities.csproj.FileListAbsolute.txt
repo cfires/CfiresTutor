@@ -39,3 +39,4 @@ E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\Utilities\bin\Debug\NPOI.xml
 E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\Utilities\obj\Debug\Utilities.csproj.ResolveComReference.cache
 E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\Utilities\obj\Debug\CfiresTutor.Utilities.dll
 E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\Utilities\obj\Debug\CfiresTutor.Utilities.pdb
+E:\Git\Online\CfiresTutor\Code\CfiresTutor\Utilities\obj\Debug\Utilities.csprojResolveAssemblyReference.cache

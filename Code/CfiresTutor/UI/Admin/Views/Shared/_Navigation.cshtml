@@ -11,7 +11,7 @@
                     </span>
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <span class="clear">
-                            <span class="block m-t-xs"><strong class="font-bold">Cfires</strong></span>
+                            <span class="block m-t-xs"><strong class="font-bold">@CurrentUser.Name</strong></span>
                             <span class="text-muted text-xs block">超级管理员<b class="caret"></b></span>
                         </span>
                     </a>
@@ -46,10 +46,10 @@
                 </a>
                 <ul class="nav nav-second-level">
                     <li>
-                        <a class="J_menuItem" href="@Url.Action("Index","User")" data-index="0">教员管理</a>
+                        <a class="J_menuItem" href="@Url.Action("Teachers","User")" data-index="0">教员管理</a>
                     </li>
                     <li>
-                        <a class="J_menuItem" href="@Url.Action("Index","User")">学员管理</a>
+                        <a class="J_menuItem" href="@Url.Action("Students","User")">学员管理</a>
                     </li>
                 </ul>
             </li>

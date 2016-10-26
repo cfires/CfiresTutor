@@ -43,7 +43,7 @@ namespace CfiresTutor.BLL
             return _userDal.GetList(start, end);
         }
 
-        public Page<Base_User> GetPageList(int pageIndex, int pageSize, string keyword)
+        public PageDataSet<Base_User> GetPageList(int pageIndex, int pageSize, string keyword)
         {
             return _userDal.GetPageList(pageIndex, pageSize, keyword);
         }

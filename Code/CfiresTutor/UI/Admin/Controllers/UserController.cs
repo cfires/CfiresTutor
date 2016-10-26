@@ -18,13 +18,26 @@ namespace CfiresTutor.UI.Admin.Controllers
         UserBll _userBll = new UserBll();
 
         /// <summary>
-        /// 用户列表
+        /// 学员列表
         /// </summary>
         /// <param name="pageIndex"></param>
         /// <param name="pageSize"></param>
         /// <param name="keyword"></param>
         /// <returns></returns>
-        public ActionResult Index(int pageIndex = 1, int pageSize = 20, string keyword = null)
+        public ActionResult Students(int pageIndex = 1, int pageSize = 20, string keyword = null)
+        {
+            var userList = _userBll.GetPageList(pageIndex, pageSize, keyword);
+            return View(userList);
+        }
+
+        /// <summary>
+        /// 教员列表
+        /// </summary>
+        /// <param name="pageIndex"></param>
+        /// <param name="pageSize"></param>
+        /// <param name="keyword"></param>
+        /// <returns></returns>
+        public ActionResult Teachers(int pageIndex = 1, int pageSize = 20, string keyword = null)
         {
             var userList = _userBll.GetPageList(pageIndex, pageSize, keyword);
             return View(userList);

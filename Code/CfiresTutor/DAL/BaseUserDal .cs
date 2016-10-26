@@ -1,4 +1,5 @@
 ﻿using CfiresTutor.Model;
+using CfiresTutor.Utilities;
 using NPoco;
 using System;
 using System.Collections.Generic;
@@ -74,7 +75,7 @@ namespace CfiresTutor.DAL
         /// <param name="pageSize"></param>
         /// <param name="keyWord"></param>
         /// <returns></returns>
-        public Page<Base_User> GetPageList(int pageIndex, int pageSize, string keyWord)
+        public PageDataSet<Base_User> GetPageList(int pageIndex, int pageSize, string keyWord)
         {
             Sql sql = Sql.Builder.Append("SELECT * FROM Base_User where Enabled=1");
 

@@ -26,3 +26,4 @@ E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\Autofac.xml
 E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\AutoMapper.xml
 E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\Model\obj\Debug\CfiresTutor.Model.dll
 E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\Model\obj\Debug\CfiresTutor.Model.pdb
+E:\Git\Online\CfiresTutor\Code\CfiresTutor\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

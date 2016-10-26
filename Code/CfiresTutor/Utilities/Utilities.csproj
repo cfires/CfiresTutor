@@ -87,6 +87,7 @@
     <Compile Include="Base.Common\EnumHelper.cs" />
     <Compile Include="Base.Common\ExcelHelper.cs" />
     <Compile Include="Base.Common\IpHelper.cs" />
+    <Compile Include="Base.Paging\PageDataSet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Base.Common\SecurityHelper.cs" />
     <Compile Include="Base.Common\WordHelper.cs" />

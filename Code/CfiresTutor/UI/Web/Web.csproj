@@ -201,6 +201,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\img19.jpg" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Scripts\bootstrap\bootstrap.min.css" />
     <Content Include="Content\Scripts\bootstrap\bootstrap.min.js" />
@@ -217,10 +218,11 @@
     <Content Include="Content\Scripts\modernizr-2.6.2.js" />
     <Content Include="Content\Scripts\respond.js" />
     <Content Include="Content\Styles\Default.css" />
+    <Content Include="Content\Styles\hplus.css" />
+    <Content Include="Content\Styles\hplus_extend.css" />
     <Content Include="Content\Styles\Site.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
-    <Content Include="img\logo.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
