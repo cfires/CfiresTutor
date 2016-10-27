@@ -1,0 +1,5 @@
+E:\Git\Online\CfiresTutor\Code\CfiresTutor\Cache\bin\Debug\CfiresTutor.Cache.dll
+E:\Git\Online\CfiresTutor\Code\CfiresTutor\Cache\bin\Debug\CfiresTutor.Cache.pdb
+E:\Git\Online\CfiresTutor\Code\CfiresTutor\Cache\obj\Debug\CfiresTutor.Cache.dll
+E:\Git\Online\CfiresTutor\Code\CfiresTutor\Cache\obj\Debug\CfiresTutor.Cache.pdb
+E:\Git\Online\CfiresTutor\Code\CfiresTutor\Cache\obj\Debug\Cache.csprojResolveAssemblyReference.cache

@@ -2097,6 +2097,7 @@ table.dataTable thead .sorting:after {
     background-image: none;
     border: 1px solid #e5e6e7;
     border-radius: 1px;
+    border-color:#6fb7e5 !important;
     color: inherit;
     display: block;
     padding: 6px 12px;

@@ -8,10 +8,9 @@ namespace CfiresTutor.UI.Web.Models
 {
     public class UserLoginViewModel
     {
-        [Required(ErrorMessage = "请输入邮箱")]
-        [Display(Name = "邮箱：")]
-        [EmailAddress(ErrorMessage = "请输入正确的邮箱")]
-        public string Email { get; set; }
+        [Required(ErrorMessage = "请输入用户名")]
+        [Display(Name = "用户名：")]
+        public string LoginName { get; set; }
 
         [Required(ErrorMessage = "请输入密码")]
         [DataType(DataType.Password)]

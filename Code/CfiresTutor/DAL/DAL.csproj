@@ -55,8 +55,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseSubjectDal.cs" />
-    <Compile Include="BaseUserDal .cs" />
+    <Compile Include="Base_SubjectDal.cs" />
+    <Compile Include="Base_TeacherDal.cs" />
+    <Compile Include="Base_UserDal .cs" />
+    <Compile Include="Base_StudentDal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
     <Compile Include="SqlHelper.cs" />

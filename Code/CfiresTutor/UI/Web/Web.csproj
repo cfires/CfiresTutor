@@ -187,9 +187,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
-    <Compile Include="Controllers\TeachersController.cs" />
-    <Compile Include="Controllers\TutorEnglishController.cs" />
-    <Compile Include="Controllers\TutorMathController.cs" />
+    <Compile Include="Controllers\TeacherController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -201,10 +199,26 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\Images\b6.jpg" />
+    <Content Include="Content\Images\gs.gif" />
+    <Content Include="Content\Images\img03.jpg" />
     <Content Include="Content\Images\img19.jpg" />
     <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\qy.jpg" />
+    <Content Include="Content\Images\wx.jpg" />
     <Content Include="Content\Scripts\bootstrap\bootstrap.min.css" />
     <Content Include="Content\Scripts\bootstrap\bootstrap.min.js" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Content\Scripts\jquery\jquery-3.1.1.intellisense.js" />
     <Content Include="Content\Scripts\jquery\jquery-3.1.1.js" />
     <Content Include="Content\Scripts\jquery\jquery-3.1.1.min.js" />
@@ -218,6 +232,7 @@
     <Content Include="Content\Scripts\modernizr-2.6.2.js" />
     <Content Include="Content\Scripts\respond.js" />
     <Content Include="Content\Styles\Default.css" />
+    <Content Include="Content\Styles\font-awesome.min.css" />
     <Content Include="Content\Styles\hplus.css" />
     <Content Include="Content\Styles\hplus_extend.css" />
     <Content Include="Content\Styles\Site.css" />
@@ -234,19 +249,24 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\User\Register.cshtml" />
-    <Content Include="Views\Teachers\Index.cshtml" />
+    <Content Include="Views\Teacher\Index.cshtml" />
     <Content Include="Views\Orders\Index.cshtml" />
     <Content Include="Views\TutorEnglish\Index.cshtml" />
     <Content Include="Views\TutorMath\Index.cshtml" />
     <Content Include="Views\Error\Index.cshtml" />
     <Content Include="Views\Error\Error404.cshtml" />
     <Content Include="Views\Error\Browser.cshtml" />
+    <Content Include="Views\Home\_TeacherCategory.cshtml" />
+    <Content Include="Views\Articles\Index.cshtml" />
+    <Content Include="Views\Person\Index.cshtml" />
+    <Content Include="Views\Home\_LastestTeachRecord.cshtml" />
+    <Content Include="Views\Home\_LastestTeacher.cshtml" />
+    <Content Include="Views\Home\_Help.cshtml" />
+    <Content Include="Views\Home\_ContractService.cshtml" />
+    <Content Include="Views\Home\_QuickLogin.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Articles\" />
-    <Folder Include="Views\Common\" />
-    <Folder Include="Views\Person\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -15,9 +15,25 @@ namespace CfiresTutor.DAL
     {
         IDatabase db = new Database("connStr");
 
+        /// <summary>
+        /// 获取实体（根据邮箱）
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
         public Base_User GetByEmail(string email)
         {
             var sql = Sql.Builder.Append("SELECT * FROM Base_User WHERE Email = @0", email);
+            return db.FirstOrDefault<Base_User>(sql);
+        }
+
+        /// <summary>
+        /// 获取实体（根据登录名）
+        /// </summary>
+        /// <param name="loginName"></param>
+        /// <returns></returns>
+        public Base_User GetByLoginName(string loginName)
+        {
+            var sql = Sql.Builder.Append("SELECT * FROM Base_User WHERE LoginName = @0", loginName);
             return db.FirstOrDefault<Base_User>(sql);
         }
 

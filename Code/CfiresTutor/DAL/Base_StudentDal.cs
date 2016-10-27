@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CfiresTutor.DAL;
 using CfiresTutor.Model;
+using NPoco;
 
-namespace CfiresTutor.BLL
+namespace CfiresTutor.DAL
 {
-    public class BaseSubjectBll
+    public class Base_StudentDal : Repository<Base_Student>
     {
-
+        IDatabase db = new Database("db");
     }
 }

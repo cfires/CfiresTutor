@@ -4,17 +4,24 @@
 }
 
 <div class="ibox-content">
-    <div class="">
-
+    <div class="header">
+        <div class="btn-left">
+            <button class="btn btn-primary" title="删除">
+                <i class="fa fa-trash"></i> 删除
+            </button>
+        </div>
+        <div class="btn-right"></div>
     </div>
-    <table width="100%">
+    <table width="100%" class="table table-bordered table-hover">
         <thead>
             <tr>
-                <th width="100%">
-                    <input type="checkbox" name="checkAllControl" />全选
+                <th width="3%" class="text-center">
+                    <input type="checkbox" name="checkAllControl" title="全选"/>
                 </th>
                 <th>登录名</th>
                 <th>用户名</th>
+                <th>邮箱</th>
+                <th>手机</th>
                 <th>创建时间</th>
                 <th>最后登录时间</th>
                 <td>操作</td>
@@ -26,9 +33,11 @@
                 foreach (var item in Model)
                 {
                     <tr>
-                        <td><input type="checkbox" name="checkSingle" /></td>
+                        <td class="text-center"><input type="checkbox" name="checkSingle" /></td>
                         <td>@item.LoginName</td>
                         <td>@item.UserName</td>
+                        <td>@item.Email</td>
+                        <th>@item.Phone</th>
                         <td>@item.CreateDate.ToString("yyyy/MM/dd HH:mm")</td>
                         <td>@item.LastLoginDate.ToString("yyyy/MM/dd HH:mm")</td>
                         <td>

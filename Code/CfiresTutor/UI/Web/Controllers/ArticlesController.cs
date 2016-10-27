@@ -9,7 +9,11 @@ namespace CfiresTutor.UI.Web.Controllers
 {
     public class ArticlesController : PublicController
     {
-        // GET: Articles
+        
+        /// <summary>
+        /// 家教学堂
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Index()
         {
             return View();

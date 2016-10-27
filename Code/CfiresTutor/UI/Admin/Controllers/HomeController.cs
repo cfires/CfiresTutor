@@ -12,6 +12,7 @@ namespace CfiresTutor.UI.Admin.Controllers
     {
         public ActionResult Index()
         {
+            SetPageTitle("后台管理");
             return View();
         }
     }

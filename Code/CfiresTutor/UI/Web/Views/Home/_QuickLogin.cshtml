@@ -1,0 +1,42 @@
+﻿@model UserLoginViewModel
+@{
+
+}
+<div class="loginbox">
+    <div class="btn-zjj">
+        <a href="@Url.Action("Register","Student")" class="btn1" rel="nofollow">我要请家教</a> <a href="@Url.Action("Register","Teacher")" class="btn2" rel="nofollow">我要做家教</a>
+    </div>
+    <div class="clear10">
+        &nbsp;
+    </div>
+    <div class="login">
+        <div class="tit">
+            会员登录
+        </div>
+        <div class="content">
+            @using (Html.BeginForm("Login", "User", FormMethod.Post))
+            {
+                <div class="ipt">
+                    <input name="txtAccount" value="用户名" id="txtAccount" type="text">
+                </div>
+                <div class="ipt ipt2">
+                    <input name="txtPassword" id="txtPassword" type="password">
+                </div>
+                <div class="ipt3">
+                    <input name="chk_save" id="chk_save" type="checkbox">
+                    <label for="chk_save">
+                        记住我的登录状态
+                    </label>
+                </div>
+                <div class="ipt4">
+                    <input name="btnLogin" value="&nbsp;&nbsp;" id="btnLogin" class="btn" type="submit">
+                </div>
+                <div class="txt4">
+                    <a href="http://qd.ygjj.com/Find.aspx" rel="nofollow">忘记密码？</a> <a href="http://qd.ygjj.com/Join" rel="nofollow">免费注册！</a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<div class="clear10">
+</div>

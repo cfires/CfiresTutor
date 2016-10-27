@@ -15,7 +15,7 @@ namespace CfiresTutor.UI.Admin.Controllers
 {
     public class UserController : PublicController
     {
-        BaseUserBll _userBll = new BaseUserBll();
+        Base_UserBll _userBll = new Base_UserBll();
 
         /// <summary>
         /// 学员列表
@@ -44,6 +44,18 @@ namespace CfiresTutor.UI.Admin.Controllers
         }
 
         /// <summary>
+        /// 删除用户
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        public ActionResult Delete(int userId)
+        {
+            _userBll.Get(userId);
+            return null;
+        }
+
+        #region 登录
+        /// <summary>
         /// 登录
         /// </summary>
         /// <param name="returnUrl"></param>
@@ -66,7 +78,7 @@ namespace CfiresTutor.UI.Admin.Controllers
         [AllowAnonymous]
         public ActionResult Login(UserLoginViewModel viewModel, string returnUrl)
         {
-            Base_User user = _userBll.GetByEmail(viewModel.Email);
+            Base_User user = _userBll.GetByLoginName(viewModel.LoginName);
             Login(user);
 
             if (user != null && SecurityHelper.DecryptAES(user.Password) == viewModel.Password)
@@ -79,6 +91,7 @@ namespace CfiresTutor.UI.Admin.Controllers
                 return View();
             }
         }
+        #endregion
 
         #region private
 
