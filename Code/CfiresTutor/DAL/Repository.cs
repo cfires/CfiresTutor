@@ -8,6 +8,10 @@ namespace CfiresTutor.DAL
     {
         IDatabase db = new Database("connStr");
 
+        public IDatabase GetDataBase()
+        {
+            return db;
+        }
         /// <summary>
         /// 获取实体(by 主键)
         /// </summary>

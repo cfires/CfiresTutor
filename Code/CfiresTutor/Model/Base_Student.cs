@@ -3,7 +3,7 @@
 namespace CfiresTutor.Model
 {
     [TableName("Base_Student")]
-    [PrimaryKey("Id", AutoIncrement = false)]
+    [PrimaryKey("UserId", AutoIncrement = false)]
     public class Base_Student : Base_User
     {
         [Column("UserId")]
@@ -12,7 +12,5 @@ namespace CfiresTutor.Model
         [Column("Age")]
         public int Age { get; set; }
 
-        [Column("Address")]
-        public string Address { get; set; }
     }
 }

@@ -67,7 +67,7 @@ namespace CfiresTutor.DAL
                 sql.Append("AND Name LIKE @0", "%" + keyWord + "%");
             }
 
-            return base.GetPageList(sql, pageIndex, pageSize);
+            return GetPageList(sql, pageIndex, pageSize);
         }
 
     }

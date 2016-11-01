@@ -1,4 +1,5 @@
 ﻿using CfiresTutor.Model;
+using NPoco;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace CfiresTutor.DAL
 {
     public class Base_TeacherDal : Repository<Base_Teacher>
     {
+        IDatabase db = new Database("connStr");
 
     }
 }

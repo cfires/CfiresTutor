@@ -50,8 +50,10 @@ namespace CfiresTutor.UI.Admin.Controllers
         /// <returns></returns>
         public ActionResult Delete(int userId)
         {
-            _userBll.Get(userId);
-            return null;
+            var user = _userBll.Get(userId);
+            _userBll.Delete(user);
+
+            return View();
         }
 
         #region 登录
