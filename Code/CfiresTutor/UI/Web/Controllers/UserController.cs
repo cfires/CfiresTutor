@@ -101,6 +101,16 @@ namespace CfiresTutor.UI.Web.Controllers
         #endregion
 
         /// <summary>
+        /// 加入
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public ActionResult Join()
+        {
+            return View();
+        }
+
+        /// <summary>
         /// 验证待注册邮箱是否已被注册
         /// </summary>
         /// <param name="email"></param>

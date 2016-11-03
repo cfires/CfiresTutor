@@ -48,12 +48,13 @@ namespace CfiresTutor.UI.Admin.Controllers
         /// </summary>
         /// <param name="userId"></param>
         /// <returns></returns>
+        [HttpPost]
         public ActionResult Delete(int userId)
         {
             var user = _userBll.Get(userId);
-            _userBll.Delete(user);
+            //_userBll.Delete(user);
 
-            return View();
+            return JavaScript("location.reload();");
         }
 
         #region 登录

@@ -184,9 +184,12 @@
     <Compile Include="Controllers\CommonController.cs" />
     <Compile Include="Controllers\CostController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
+    <Compile Include="Controllers\HelpController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\PersonController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\TeacherController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
@@ -225,6 +228,8 @@
     <Content Include="Content\Scripts\jquery\jquery-3.1.1.slim.js" />
     <Content Include="Content\Scripts\jquery\jquery-3.1.1.slim.min.js" />
     <None Include="Content\Scripts\jquery\jquery.validate-vsdoc.js" />
+    <Content Include="Content\Scripts\jquery\jquery.unobtrusive-ajax.js" />
+    <Content Include="Content\Scripts\jquery\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Content\Scripts\jquery\jquery.validate.js" />
     <Content Include="Content\Scripts\jquery\jquery.validate.min.js" />
     <Content Include="Content\Scripts\jquery\jquery.validate.unobtrusive.js" />
@@ -251,8 +256,6 @@
     <Content Include="Views\User\Register.cshtml" />
     <Content Include="Views\Teacher\Index.cshtml" />
     <Content Include="Views\Orders\Index.cshtml" />
-    <Content Include="Views\TutorEnglish\Index.cshtml" />
-    <Content Include="Views\TutorMath\Index.cshtml" />
     <Content Include="Views\Error\Index.cshtml" />
     <Content Include="Views\Error\Error404.cshtml" />
     <Content Include="Views\Error\Browser.cshtml" />
@@ -264,6 +267,12 @@
     <Content Include="Views\Home\_Help.cshtml" />
     <Content Include="Views\Home\_ContractService.cshtml" />
     <Content Include="Views\Home\_QuickLogin.cshtml" />
+    <Content Include="Views\User\Join.cshtml" />
+    <Content Include="Views\Student\Join.cshtml" />
+    <Content Include="Views\Teacher\Join.cshtml" />
+    <Content Include="Views\News\TeacherNotice.cshtml" />
+    <Content Include="Views\Help\_TeacherNotice.cshtml" />
+    <Content Include="Views\Help\TeacherRegisterProtocol.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

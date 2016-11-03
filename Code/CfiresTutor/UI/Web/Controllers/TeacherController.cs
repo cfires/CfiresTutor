@@ -9,8 +9,22 @@ namespace CfiresTutor.UI.Web.Controllers
 {
     public class TeacherController : PublicController
     {
-        // GET: Tutor
+        /// <summary>
+        /// 教员库
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
         public ActionResult Index()
+        {
+            return View();
+        }
+
+        /// <summary>
+        /// 加入教员
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        public ActionResult Join()
         {
             return View();
         }

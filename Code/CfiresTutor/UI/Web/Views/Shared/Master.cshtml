@@ -23,6 +23,7 @@
     <script src="~/Content/Scripts/jquery/jquery-3.1.1.min.js"></script>
     <script src="~/Content/Scripts/jquery/jquery.validate.min.js"></script>
     <script src="~/Content/Scripts/jquery/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Content/Scripts/jquery/jquery.unobtrusive-ajax.min.js"></script>
 </head>
 <body>
     <div class="topbar">
@@ -33,7 +34,7 @@
                 @if (CurrentUser == null)
                 {
                     <a href="@Url.Action("Login", "User")"> 请登录 </a>
-                    <a href="@Url.Action("Register", "User")"> 免费注册 </a>
+                    <a href="@Url.Action("Join", "User")"> 免费注册 </a>
                 }
             </div>
             <div class="box_2">

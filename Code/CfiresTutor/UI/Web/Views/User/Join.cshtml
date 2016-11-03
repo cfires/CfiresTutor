@@ -1,0 +1,81 @@
+﻿
+@{
+    Layout = "~/Views/Shared/Master.cshtml";
+}
+
+<div class="bread">
+    <div class="dh">
+        当前位置：<a href="/">首页</a> &gt; 教员、学员注册
+    </div>
+    <div class="fx">
+        @*百度分享插件*@
+    </div>
+</div>
+
+<div class="regBox">
+    <div class="tit">
+        <div class="iconReg">
+            &nbsp;
+        </div>
+        <h3>
+            会员注册
+        </h3>
+    </div>
+    <div id="pnlType" class="faculty">
+        <table width="100%" cellspacing="0" cellpadding="0" border="0">
+            <tbody>
+                <tr>
+                    <td class="f1">
+                        新会员须知
+                    </td>
+                </tr>
+                <tr>
+                    <td class="f2">
+                        <p>
+
+                            阳光家教网有着严格的教员认证体系、完善的学员服务体系，充分利用阳光家教网信息平台，将家教服务信息化，使教员、学员的家教服务供求更加便捷、快速、交
+                            互。在这里，您只需在网络上轻松递交您的家教供求信息，通过系统和人工双重匹配，很快就能够享受到家教网提供的完善服务。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="f2">
+                        <p>
+                            请确认您的会员类型，做家教的大学生/教师等请选择教员，请家教的家长/孩子请选择学员。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="f2">
+                        <p>
+                            阳光家教网外拨电话为<font color="#ff0000">021-5588xxxx</font>，请留意接听。
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="f3">
+                        <input id="rdbTeacher" name="MemberType" value="rdbTeacher" checked="checked" type="radio">
+                        <label for="rdbTeacher">我是教员（做家教）</label>
+                        <input id="rdbStudent" name="MemberType" value="rdbStudent" type="radio">
+                        <label for="rdbStudent">我是学员（请家教）</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="f4">
+                        <a href="javascript:;" class="btn btn-warning" onclick="Join()">确定</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="clear">
+    </div>
+</div>
+
+<script>
+    function Join() {
+       var aa= $("input radio:checked").val();
+       alert(aa);
+    }
+
+</script>

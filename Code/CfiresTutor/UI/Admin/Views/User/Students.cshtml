@@ -16,7 +16,7 @@
         <thead>
             <tr>
                 <th width="3%" class="text-center">
-                    <input type="checkbox" name="checkAllControl" title="全选"/>
+                    <input type="checkbox" name="checkAllControl" title="全选" />
                 </th>
                 <th>登录名</th>
                 <th>用户名</th>
@@ -41,7 +41,7 @@
                         <td>@item.CreateDate.ToString("yyyy/MM/dd HH:mm")</td>
                         <td>@item.LastLoginDate.ToString("yyyy/MM/dd HH:mm")</td>
                         <td>
-                            <a class="btn btn-sm btn-danger">删除</a>
+                            @Ajax.ActionLink("删除", "Delete", "User", new { userId = item.Id }, new AjaxOptions { Confirm = "确认删除？", HttpMethod = "Post", OnSuccess = "commonCallback" }, new { @class = "btn btn-sm btn-danger" })
                         </td>
                     </tr>
                 }
@@ -49,3 +49,9 @@
         </tbody>
     </table>
 </div>
+
+<script>
+    function commonCallback() {
+        alert("删除成功");
+    }
+</script>

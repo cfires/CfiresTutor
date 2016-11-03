@@ -8,6 +8,9 @@ using System.Web.Mvc;
 
 namespace CfiresTutor.UI.Web.Controllers
 {
+    /// <summary>
+    /// 公用
+    /// </summary>
     public class CommonController : PublicController
     {
         #region 验证码

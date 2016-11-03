@@ -1,0 +1,134 @@
+﻿
+@{
+    Layout = "~/Views/Shared/Master.cshtml";
+}
+
+<div class="bread">
+    <div class="dh">
+        当前位置：<a href="http://qd.ygjj.com/">首页</a> &gt; 教员注册
+    </div>
+    <div class="fx">
+        <!-- Baidu Button BEGIN -->
+        <div class="bdsharebuttonbox bdshare-button-style0-16" data-bd-bind="1478158711725">
+            <a class="bds_more" href="#" data-cmd="more"></a><a title="分享到QQ空间" class="bds_qzone" href="#" data-cmd="qzone"></a><a title="分享到新浪微博" class="bds_tsina" href="#" data-cmd="tsina">
+            </a><a title="分享到腾讯微博" class="bds_tqq" href="#" data-cmd="tqq"></a><a title="分享到人人网" class="bds_renren" href="#" data-cmd="renren"></a><a title="分享到微信" class="bds_weixin" href="#" data-cmd="weixin"></a><a class="bds_count" data-cmd="count" title="累计分享0次">0</a>
+        </div>
+        <script type="text/javascript">    window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {}, "image": { "viewList": ["qzone", "tsina", "tqq", "renren", "weixin"], "viewText": "分享到：", "viewSize": "16" }, "selectShare": { "bdContainerClass": null, "bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"] } }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+        <!-- Baidu Button END -->
+    </div>
+</div>
+
+<div class="regBox">
+    <div class="tit">
+        <div class="iconReg">
+            &nbsp;
+        </div>
+        <h3>
+            教员注册 &gt;
+            第一步：申请账号
+        </h3>
+    </div>
+    <div class="regForm">
+        <table id="pnlFirst" width="100%" cellspacing="0" cellpadding="0" border="0">
+            <tbody>
+                <tr>
+                    <th>
+                        用户名：
+                    </th>
+                    <td>
+                        <input name="txtAccount" id="txtAccount" class="txt" datatype="s4-18" ajaxurl="/Handle/User.ashx" errormsg="昵称为4到18个字符！请不要带特殊字符！" nullmsg="请填写信息！" sucmsg="此用户名可以注册！" value="cfires_t" type="text">
+                        <span class="Validform_checktip Validform_right">此用户名可以注册！</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        密码：
+                    </th>
+                    <td>
+                        <input name="txtPassword" id="txtPassword" class="txt" datatype="*6-16" nullmsg="请设置密码！" errormsg="密码范围在6~16位之间！" type="password">
+                        <span class="Validform_checktip Validform_right"> </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        确认密码：
+                    </th>
+                    <td>
+                        <input name="txtPassword1" id="txtPassword1" class="txt" datatype="*" recheck="txtPassword" nullmsg="请再输入一次密码！" errormsg="您两次输入的账号密码不一致！" type="password"><span class="Validform_checktip Validform_right"> </span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        教员类型：
+                    </th>
+                    <td>
+                        <input id="rdbStudent" name="TeachType" value="rdbStudent" checked="checked" type="radio"><label for="rdbStudent">在校大学生（研究生）</label><br>
+                        <input id="rdbTeacher" name="TeachType" value="rdbTeacher" type="radio"><label for="rdbTeacher">教师（在职、进修、离职、退休）</label><br>
+                        <input id="rdbOther" name="TeachType" value="rdbOther" type="radio"><label for="rdbOther">其他 （毕业人员、工作人员、留学生、外籍教师、海外归国人员等）</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        &nbsp;
+                    </th>
+                    <td>
+                        <input checked="checked" name="chk" id="chk" datatype="*" sucmsg="已阅读并同意用户服务协议" nullmsg="请阅读并同意用户服务协议！" type="checkbox">
+                        我已阅读并接受《<a href="http://qd.ygjj.com/D389.html" class="link2" target="_blank">教员须知</a>》和《<a href="http://qd.ygjj.com/D7160.html" class="link2" target="_blank">教员注册协议</a>》<br>
+                        <span class="Validform_checktip"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        &nbsp;
+                    </th>
+                    <td>
+                        <input name="btnFirst" value=" " id="btnFirst" class="btnReg1" type="submit"> <font color="#ff0000"></font>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="regDes">
+        <p class="tit2">
+            阳光家教优势
+        </p>
+        <p>
+            <strong>机会多</strong><br>
+            教员只要有付出就会有回报，这里有更多的家教机会
+        </p>
+        <p>
+            <strong>速度快</strong><br>
+            学员告知需求后以最快的速度找到适合的教员
+        </p>
+        <p>
+            <strong>师资强大</strong><br>
+            大量名校名师、优秀大学生，保证教学质量
+        </p>
+        <p>
+            <strong>贴心服务</strong><br>
+            满足不同需求的教员和学员，提供特色、贴心服务
+        </p>
+        <div class="ui_weibo">
+            <div class="weibo1">
+                <img src="TeacherRegister_files/img114.jpg" data-bd-imgshare-binded="1" width="70">
+            </div>
+            <div class="weibo2">
+                <div class="le">
+                    <a href="http://weibo.com/ygjjcom" target="_blank">
+                        <img src="TeacherRegister_files/wb.jpg" data-bd-imgshare-binded="1" width="70">
+                    </a>
+                </div>
+                <div class="ri">
+                    <p class="v">
+                        阳光家教网
+                    </p>
+                    <div>
+                        <wb:follow-button uid="2008227803" type="red_1" width="67" height="24"><iframe src="TeacherRegister_files/followbutton.htm" scrolling="no" marginheight="0" height="24" frameborder="0" width="67"></iframe></wb:follow-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+</div>

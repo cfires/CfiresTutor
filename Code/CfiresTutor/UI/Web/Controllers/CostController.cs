@@ -9,7 +9,7 @@ namespace CfiresTutor.UI.Web.Controllers
     public class CostController : Controller
     {
         /// <summary>
-        /// 
+        /// 家教价格
         /// </summary>
         /// <returns></returns>
         [HttpGet]
