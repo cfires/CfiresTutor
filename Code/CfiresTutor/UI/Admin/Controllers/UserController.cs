@@ -52,9 +52,15 @@ namespace CfiresTutor.UI.Admin.Controllers
         public ActionResult Delete(int userId)
         {
             var user = _userBll.Get(userId);
-            //_userBll.Delete(user);
-
-            return JavaScript("location.reload();");
+            if (user != null)
+            {
+                _userBll.Delete(user);
+                return Json(new { status = 1, message = "删除成功", JsonRequestBehavior.AllowGet });
+            }
+            else
+            {
+                return Json(new { status = -1, message = "删除失败", JsonRequestBehavior.AllowGet });
+            }
         }
 
         #region 登录
@@ -101,7 +107,7 @@ namespace CfiresTutor.UI.Admin.Controllers
         private void Login(Base_User user)
         {
             var identity = new ClaimsIdentity("App");
-            identity.AddClaim(new Claim(ClaimTypes.Name, user.Email));
+            identity.AddClaim(new Claim(ClaimTypes.Name, user.LoginName));
             identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()));
             identity.AddClaim(new Claim(ClaimTypes.Role, user.UserType.ToString()));
             identity.AddClaim(new Claim(ClaimTypes.GroupSid, user.UserType.ToString()));

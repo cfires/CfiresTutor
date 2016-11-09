@@ -41,7 +41,7 @@
                         <td>@item.CreateDate.ToString("yyyy/MM/dd HH:mm")</td>
                         <td>@item.LastLoginDate.ToString("yyyy/MM/dd HH:mm")</td>
                         <td>
-                            @Ajax.ActionLink("删除", "Delete", "User", new { userId = item.Id }, new AjaxOptions { Confirm = "确认删除？", HttpMethod = "Post", OnSuccess = "commonCallback" }, new { @class = "btn btn-sm btn-danger" })
+                            <button class="btn btn-sm btn-danger" onclick="UserDelete(@item.Id)">删除</button>
                         </td>
                     </tr>
                 }
@@ -51,7 +51,28 @@
 </div>
 
 <script>
-    function commonCallback() {
-        alert("删除成功");
+
+    function UserDelete(id) {
+        if (confirm("确定删除吗?")) {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("Delete", "User")',
+                dataType: "json",
+                async: true,
+                data: { userId: id },
+                success: function (data) {
+                    if (data.status == "1") {
+                        alert(data.message);
+                    } else {
+                        alert(data.message);
+                        return;
+                    }
+
+                },
+                error: function (data) {
+                    alert(data.message);
+                }
+            });
+        }
     }
 </script>

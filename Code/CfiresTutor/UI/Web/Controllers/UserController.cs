@@ -133,7 +133,7 @@ namespace CfiresTutor.UI.Web.Controllers
         private void Login(Base_User user)
         {
             var identity = new ClaimsIdentity("App");
-            identity.AddClaim(new Claim(ClaimTypes.Name, user.Email));
+            identity.AddClaim(new Claim(ClaimTypes.Name, user.LoginName));
             identity.AddClaim(new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()));
             identity.AddClaim(new Claim(ClaimTypes.Role, user.UserType.ToString()));
             identity.AddClaim(new Claim(ClaimTypes.GroupSid, user.UserType.ToString()));
