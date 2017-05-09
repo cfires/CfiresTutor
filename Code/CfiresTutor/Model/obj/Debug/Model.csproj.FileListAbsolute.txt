@@ -26,3 +26,13 @@ E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\Autofac.xml
 E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\AutoMapper.xml
 E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\Model\obj\Debug\CfiresTutor.Model.dll
 E:\Project\Cfires\CfiresTutor\Code\CfiresTutor\Model\obj\Debug\CfiresTutor.Model.pdb
+E:\ProjectOnline\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\CfiresTutor.Model.dll
+E:\ProjectOnline\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\CfiresTutor.Model.pdb
+E:\ProjectOnline\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\Autofac.dll
+E:\ProjectOnline\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\AutoMapper.dll
+E:\ProjectOnline\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\NPoco.dll
+E:\ProjectOnline\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\Autofac.xml
+E:\ProjectOnline\CfiresTutor\Code\CfiresTutor\Model\bin\Debug\AutoMapper.xml
+E:\ProjectOnline\CfiresTutor\Code\CfiresTutor\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+E:\ProjectOnline\CfiresTutor\Code\CfiresTutor\Model\obj\Debug\CfiresTutor.Model.dll
+E:\ProjectOnline\CfiresTutor\Code\CfiresTutor\Model\obj\Debug\CfiresTutor.Model.pdb
